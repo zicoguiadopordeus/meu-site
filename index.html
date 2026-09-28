@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zicomtfe</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="dark-theme">
+
+    <h1>Guiado por Deus</h1>
+
+    <p id="msg">Melhores Jogadores Da História:</p>
+
+    <ul>
+        <li class="list">Neymar</li>
+        <li class="list">Dembele</li>
+        <li>Jesus</li>
+    </ul>
+
+    <div>
+        <button class="btn">Dark</button>
+    </div>
+
+    <noscript>Você Precisa Clicar nesse ícone para seguir</noscript>
+
+    <!-- QR Code Pix -->
+    <div id="qrcode-container">
+        <h2>Faça uma contribuição pelo Pix</h2>
+
+        <div id="qrcode"></div>
+
+        <p>Escaneie o QR Code ou copie o código Pix.</p>
+    </div>
+
+    <!-- Seu JavaScript -->
+    <script src="app.js"></script>
+
+    <!-- Biblioteca que gera o QR Code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <!-- Código Pix -->
+    <script>
+        new QRCode(document.getElementById("qrcode"), {
+            text: "00020126410014br.gov.bcb.pix0119mathhluiz@gmail.com52040000530398654071000.005802BR5924MATHEUS LUIZ BEZERRA DOS6009Sao Paulo62290525REC6ABABA07AF187120434568630495FA",
+            width: 200,
+            height: 200
+        });
+    </script>
+
+</body>
+
+</html>
+```

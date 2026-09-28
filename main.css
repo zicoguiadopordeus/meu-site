@@ -1,0 +1,55 @@
+:root {
+    --blue: #0000FF;
+    --black: #000000;
+    --white: #FFFFFF;
+
+    --bg: var(--white);
+    --fontColor: var(--black);
+
+    --btnFontColor: var(--black);
+    --btnBg: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--blue);
+}
+
+* {
+    color: var(--fontColor);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+body {
+    background: var(--bg);
+}
+
+ul {
+    display: inline-block;
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+/* QR Code */
+#qrcode-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
